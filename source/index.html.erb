@@ -37,13 +37,50 @@ title: Le Wagon Middleman boilerplate
  	</div>
 
 <div class="row">
-<div class="clo-xs-12 col-sm-3 item0">
-  <img src="http://placehold.it/400x400">	 
-	</div> 	
-      <div class="clo-xs-12 col-sm-3 item0">
-		<img src="http://placehold.it/400x400">
-	  </div>
-    <div class="clo-xs-12 col-sm-3 item0">
-	  <img src="http://placehold.it/400x400">
+  <div class="clo-xs-12 col-sm-3 item0">
+	<img src="images/anne.jpg" class="img-circle ite1">	 
+  </div> 	
+  <div class="clo-xs-12 col-sm-3 item10">
+	<img src="images/seb.jpg" class="img-circle ite1">
+  </div>
+    <div class="clo-xs-12 col-sm-3 item20">
+      <img src="images/romain.jpeg" class="img-circle ite1">
     </div>
 </div>
+
+  <div class="container3">
+    <form action="#">
+    <p id="l3">Get news from us</p>
+    <p id="l4">Leave us your mail and get news from us</p>
+    <div class="col-xs-6 col-md-6" id="ite22">
+  <input type="password" class="form-control">
+  <input type="submit" value="Subscribe" class="btn btn-primary">
+  </div>
+
+</form>
+</div>
+
+
+
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+};
+
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title: "You are here!"
+});
+</script>
